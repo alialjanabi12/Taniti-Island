@@ -13,10 +13,13 @@
 }
 
 .filter-buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .filter-buttons button {
@@ -26,6 +29,10 @@
   font-size: 0.9rem;
   cursor: pointer;
   color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .filter-buttons .active,
@@ -97,5 +104,9 @@
 
   .grid-item {
     width: 100%;
+  }
+
+  .filter-buttons {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
