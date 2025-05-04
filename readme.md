@@ -6,16 +6,16 @@ A modern, responsive tourism website for the fictional island of Taniti. Built u
 
 ## Features
 
-- Bright, island-inspired design with ocean blues and accent colors
-- Fully responsive layout for desktop and mobile
-- Interactive booking form with modal confirmation
-- Filterable services section (e.g., Restaurants, Hotels)
-- FAQ accordion with themed background
-- Special Offers cards with hover effects
-- Testimonial carousel
-- Embedded tour video section
-- Font Awesome icons for rich visuals
-- Custom modals and interactive elements using Bootstrap JS
+• Bright, island-inspired design with ocean blues and accent colors
+• Fully responsive layout for desktop and mobile
+• Interactive booking form with modal confirmation
+• Filterable services section (e.g., Restaurants, Hotels)
+• FAQ accordion with themed background
+• Special Offers cards with hover effects
+• Testimonial carousel
+• Embedded tour video section
+• Font Awesome icons for rich visuals
+• Custom modals and interactive elements using Bootstrap JS
 
 ## Usage
 
@@ -29,7 +29,6 @@ All custom styles are written in plain CSS (split across logical component files
 
 ## Credits
 
-- Background images from [Pexels](https://www.pexels.com) and [Unsplash](https://unsplash.com)
-- Island data provided by Western Governors University UX Design Project
-- Santorini drone video from [Exploropia on YouTube](https://www.youtube.com/watch?v=4zAEDLwl9HI)
-# Taniti-Island
+• Background images from [Pexels](https://www.pexels.com) and [Unsplash](https://unsplash.com)
+• Island data provided by Western Governors University UX Design Project
+• Santorini drone video from [Exploropia on YouTube](https://www.youtube.com/watch?v=4zAEDLwl9HI)
