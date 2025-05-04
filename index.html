@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taniti Island</title>
+    <link rel="icon" href="images/logo.svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/01-style.css" />
+    <link rel="stylesheet" href="css/02-navbar.css" />
+    <link rel="stylesheet" href="css/03-hero.css" />
+    <link rel="stylesheet" href="css/04-about.css" />
+    <link rel="stylesheet" href="css/05-needs.css" />
+    <link rel="stylesheet" href="css/06-FAQ.css" />
+    <link rel="stylesheet" href="css/07-gallery.css" />
+    <link rel="stylesheet" href="css/08-special-offers.css" />
+    <link rel="stylesheet" href="css/09-discover.css" />
+    <link rel="stylesheet" href="css/10-testimonals.css" />
+    <link rel="stylesheet" href="css/11-reach-us.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- |> Navbar -->
+    <nav class="navbar navbar-expand-xxl sticky-top bg-transparent">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!--[] Left Links -->
+        <div class="d-flex align-items-center">
+          <button
+            class="navbar-toggler me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="font-size: 18px !important">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#FAQ">FAQ</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#Offers">Offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tour">Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Testimonials">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--[] Center Logo -->
+        <a class="navbar-brand mx-auto text-center" href="#">
+          <div class="d-flex align-items-center">
+            <img src="images/logo.svg" alt="Logo" style="height: 85px" class="me-2" />
+            <div
+              class="fw-bold text-uppercase"
+              style="color: #005f73; font-family: 'Prata', serif; font-size: 1.8rem"
+            >
+              Taniti
+            </div>
+          </div>
+        </a>
+
+        <!--[] Right Contact Info -->
+        <div class="d-none d-xl-flex align-items-center gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <div class="icon-box">
+              <i class="bi bi-telephone-fill icon rounded-3"></i>
+            </div>
+            <div class="icon-box">
+              <i class="bi bi-envelope-fill icon rounded-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- |>Hero -->
+    <section class="hero-section my-5 py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--[] Left Text -->
+          <div class="col-xl-6 text-center text-xl-start mb-4 mb-xl-0">
+            <small class="subheading">The Ultimate Luxury Experience</small>
+            <h1 class="hero-title my-3">The Perfect<br />Base For You</h1>
+            <div class="d-flex justify-content-center justify-content-xl-start gap-3">
+              <a href="#tour" class="btn btn-custom">Take A Tour</a>
+              <a href="#Offers" class="btn btn-custom">View Offers</a>
+            </div>
+          </div>
+
+          <!--[] Right Image -->
+          <div class="col-xl-6 text-center">
+            <img
+              src="https://images.pexels.com/photos/27810962/pexels-photo-27810962/free-photo-of-burano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Family at the Beach"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- |> Booking Form -->
+    <section class="booking-form">
+      <div class="container bg-white p-4 shadow rounded">
+        <div class="row g-3 align-items-center">
+          <div class="col-xl-3">
+            <label class="form-label booking-label">Arrival Date</label>
+            <div class="input-group">
+              <span class="input-group-text blue-icon"><i class="fas fa-calendar-alt"></i></span>
+              <input type="text" class="form-control" placeholder="3/24/2020" />
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <label class="form-label booking-label">Departure Date</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-calendar-alt blue-icon"></i></span>
+              <input type="text" class="form-control" placeholder="3/31/2020" />
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <label class="form-label booking-label">Guests</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="fas fa-people-arrows blue-icon"></i></span>
+              <input type="text" class="form-control" placeholder="+ Number Of Guests" />
+            </div>
+          </div>
+
+          <div class="col-xl-3 d-grid">
+            <button
+              class="btn btn btn-outline-custom mt-3"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingConfirmation"
+            >
+              Check Availability
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--|> Confirmation Modal -->
+    <div
+      class="modal fade"
+      id="bookingConfirmation"
+      tabindex="-1"
+      aria-labelledby="bookingConfirmationLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingConfirmationLabel">Booking Confirmed</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Your request has been received. We’ll follow up soon. Enjoy your trip to Taniti!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- |> About Section -->
+    <section class="about-section py-5 my-5 text-center">
+      <div class="container">
+        <!-- Down Arrow Button -->
+        <div class="scroll-down mb-4 d-flex justify-content-center my-5 pb-5">
+          <a href="#next-section" class="btn btn-primary rounded-circle">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>
+
+        <!-- Subheading -->
+        <small class="subheading"> The Heart of the Pacific</small>
+
+        <!-- Main Heading -->
+        <h2 class="section-title my-3">
+          Discover Taniti A Tropical Paradise of
+          <br />Beaches, Rainforests, and Volcanoes<br />
+        </h2>
+
+        <!--  Cards -->
+        <div class="row justify-content-center mt-5 g-4">
+          <!-- Card 1-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-hiking fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Adventure Tours</div>
+            </div>
+          </div>
+
+          <!-- Card 2-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-water fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Beach Activities</div>
+            </div>
+          </div>
+
+          <!-- Card 3-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-users fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Cultural Experiences</div>
+            </div>
+          </div>
+
+          <!-- Card 4-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-home fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Indigenous Villages</div>
+            </div>
+          </div>
+
+          <!-- Card 5-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-leaf fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Rainforest Exploration</div>
+            </div>
+          </div>
+
+          <!-- Card 6-->
+          <div class="col-4 col-xl-2">
+            <div class="about-card p-4">
+              <i class="fas fa-recycle fa-2x mb-3 blue-icon"></i>
+              <div class="orange-text">Sustainable Tourism</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--|> Customer Needs -->
+    <section class="needs-section my-5 py-5" id="next-section">
+      <div class="text-center">
+        <small class="subheading">Customer Needs</small>
+        <h2 class="section-title">Explore Taniti's Offerings</h2>
+        <div class="section-divider"></div>
+
+        <!-- Filter Buttons as Categories -->
+        <div class="filter-buttons">
+          <button data-filter="restaurants" class="active">Restaurants</button>
+          <button data-filter="hotels">Hotels</button>
+          <button data-filter="stores">Stores</button>
+          <button data-filter="entertainment">Entertainment</button>
+          <button data-filter="sightseeing">Sightseeing</button>
+          <button data-filter="transportation">Transportation</button>
+        </div>
+      </div>
+
+      <!-- Grid Container -->
+      <div class="image-container" id="grid-container"></div>
+    </section>
+
+    <!--|> FAQ-section -->
+    <section class="faq-section" id="FAQ">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+            <small class="subheading">Frequently Asked Questions </small>
+            <h2 class="section-title my-3">Everything You Need to Know About Taniti</h2>
+            <p class="description mb-3">
+              Taniti Island has everything for your trip & every single thing you need to know.
+            </p>
+            <button
+              type="button"
+              class="btn btn-custom"
+              data-bs-toggle="modal"
+              data-bs-target="#faqModal"
+            >
+              View FAQ
+            </button>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-6 position-relative">
+            <img
+              class="rounded-5 img-fluid rounded-3"
+              src="https://images.pexels.com/photos/1167021/pexels-photo-1167021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Taniti Island"
+            />
+          </div>
+        </div>
+        <div class="section-underline mt-4"></div>
+      </div>
+    </section>
+    <!--|| FAQ Modal -->
+    <div
+      class="modal fade"
+      id="faqModal"
+      tabindex="-1"
+      aria-labelledby="faqModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="faqModalLabel">Frequently Asked Questions</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="accordion" id="faqAccordion">
+              <!-- FAQ Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse1"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse1"
+                  >
+                    What is the voltage of power outlets on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="faqHeading1"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Power outlets are 120 volts, the same as in the United States.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse2"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse2"
+                  >
+                    What are the alcohol regulations on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading2"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Alcohol is not allowed to be served or sold between midnight and 9:00 a.m.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse3"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse3"
+                  >
+                    What is the legal drinking age on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading3"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    The drinking age on Taniti is 18, and it is not strictly enforced.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading4">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse4"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse4"
+                  >
+                    Do people speak English on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading4"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Many younger Tanitians speak fluent English. However, very little English is
+                    spoken in rural areas, especially by older residents.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading5">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse5"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse5"
+                  >
+                    Is there healthcare available on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading5"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, Taniti has one hospital and several clinics. The hospital has many
+                    multilingual employees to assist visitors.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading6">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse6"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse6"
+                  >
+                    What is the crime rate like on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse6"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading6"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Violent crime is very rare on Taniti, but with the increase in tourism, there
+                    are more reports of pickpocketing and other petty crimes.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading7">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse7"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse7"
+                  >
+                    Are there holidays on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse7"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading7"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Taniti enjoys a large number of national holidays. Many tourist attractions and
+                    restaurants will be closed on holidays, so visitors should plan accordingly.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 8 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faqHeading8">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapse8"
+                    aria-expanded="true"
+                    aria-controls="faqCollapse8"
+                  >
+                    What currency is used on Taniti?
+                  </button>
+                </h2>
+                <div
+                  id="faqCollapse8"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faqHeading8"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Taniti uses the U.S. dollar as its currency. Many businesses will also accept
+                    euros and yen. Several banks facilitate currency exchange, and many businesses
+                    accept major credit cards.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- |> Gallery -->
+    <section class="gallery-section">
+      <div class="gallery-slider">
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/2660837/pexels-photo-2660837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 1"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/2417264/pexels-photo-2417264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 2"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 3"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 4"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/462205/pexels-photo-462205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 5"
+          />
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/3214968/pexels-photo-3214968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 6"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/31732100/pexels-photo-31732100/free-photo-of-red-fishing-boats-docked-at-harbor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 7"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/4319838/pexels-photo-4319838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 8"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/30890794/pexels-photo-30890794/free-photo-of-colorful-coastal-homes-in-imsouane-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 9"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.pexels.com/photos/5282269/pexels-photo-5282269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Image 10"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--|> Special Offers Section -->
+    <section class="special-offers my-5 py-5" id="Offers">
+      <div class="container text-center">
+        <!-- Title -->
+        <h2 class="section-title">Special Offers &amp; Discounts</h2>
+        <div class="section-divider my-3"></div>
+        <p class="description mb-5">
+          Explore exclusive offers for your dream vacation to Taniti Island, featuring lush
+          rainforests, stunning beaches, and the famous volcano. Book your getaway now!
+        </p>
+
+        <!-- Cards -->
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="offer-card">
+              <img
+                src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b"
+                alt=" image 1"
+                class="offer-image"
+              />
+              <div class="offer-info">
+                <p class="description"><i class="fas fa-map-marker-alt me-1"></i> Taniti Island</p>
+                <h5 class="offer-location">Rialto Mountains Adventure</h5>
+                <p class="offer-price fw-bold">$100.00</p>
+                <a href="#" class="btn p-2 btn-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="offer-card">
+              <img
+                src="https://images.pexels.com/photos/13827276/pexels-photo-13827276.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="image 2 "
+                class="offer-image"
+              />
+              <div class="offer-info">
+                <p class="description"><i class="fas fa-map-marker-alt me-1"></i> Taniti Island</p>
+                <h5 class="offer-location">Yellow Leaf Bay Escape</h5>
+                <p class="offer-price fw-bold">$175.00</p>
+                <a href="#" class="btn p-2 btn-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="offer-card">
+              <img
+                src="https://images.pexels.com/photos/2587316/pexels-photo-2587316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=" image 3"
+                class="offer-image"
+              />
+              <div class="offer-info">
+                <p class="description"><i class="fas fa-map-marker-alt me-1"></i> Taniti Island</p>
+                <h5 class="offer-location">Perhentian Islands Package</h5>
+                <p class="offer-price fw-bold">$225.00</p>
+                <a href="#" class="btn p-2 btn-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-xl-3">
+            <div class="offer-card">
+              <img
+                src="https://images.pexels.com/photos/7372476/pexels-photo-7372476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="offer-image"
+                alt=" image 4"
+              />
+              <div class="offer-info">
+                <p class="description"><i class="fas fa-map-marker-alt me-1"></i> Taniti Island</p>
+                <h5 class="offer-location">Lake Thun Exploration</h5>
+                <p class="offer-price fw-bold">$150.00</p>
+                <a href="#" class="btn p-2 btn-custom">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--|> Discover Section -->
+    <section class="discover py-5" id="tour">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side -->
+          <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+            <small class="subheading">Take a Tour</small>
+            <h2 class="section-title my-3">Discover Our Underground.</h2>
+            <p class="description mb-3">
+              Explore the hidden gems of Taniti Island, from ancient caves to secret beaches. Join
+              our exclusive tour and uncover the mysteries of the island.
+            </p>
+            <a href="#Testimonials" class="btn btn-custom">View Feedback</a>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-lg-6 position-relative">
+            <img
+              class="rounded-5 img-fluid rounded-3"
+              src="https://images.pexels.com/photos/17123410/pexels-photo-17123410/free-photo-of-a-person-looking-out-of-an-airplane-window-onto-the-coast-and-sea.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Taniti Island"
+            />
+            <a
+              href="https://www.youtube.com/watch?v=4zAEDLwl9HI"
+              class="discover-play"
+              target="_blank"
+            >
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+        </div>
+        <div class="section-underline mt-4"></div>
+      </div>
+    </section>
+
+    <!--|> Testimonials Section -->
+    <section class="testimonials-section my-5" id="Testimonials">
+      <div class="container text-center">
+        <small class="subheading">Testimonials</small>
+        <h2 class="section-title">Tourist Feedback</h2>
+        <p class="description mb-4">
+          Hear what our visitors have to say about their unforgettable experience on Taniti Island.
+          Explore their reviews and discover why Taniti is the ultimate tropical getaway!
+        </p>
+
+        <div class="section-divider"></div>
+
+        <!-- Carousel Wrapper -->
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Items -->
+          <div class="carousel-inner py-3">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center g-4">
+                <div class="col-lg-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/80.jpg"
+                        alt="Client 1"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Darkman Kamin</h5>
+                    <p class="client-title">Founder, Condo</p>
+                    <p class="description">
+                      "Taniti Island offers an unforgettable experience! The natural beauty and
+                      adventure are unmatched."
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/92.jpg"
+                        alt="Client 2"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Simon H. Kubter</h5>
+                    <p class="client-title">Founder, Hilix</p>
+                    <p class="description">
+                      "The island's hospitality and its stunning landscapes made my visit incredibly
+                      memorable."
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/125.jpg"
+                        alt="Client 3"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Rosalina D. William</h5>
+                    <p class="client-title">Founder, Qux Co.</p>
+                    <p class="description">
+                      "A truly magical place that I will definitely revisit. The natural beauty and
+                      the rich culture are inspiring."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center g-4">
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/124.jpg"
+                        alt="Client 4"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Amelia Johnson</h5>
+                    <p class="client-title">Founder, Aplus</p>
+                    <p class="description">
+                      "The beaches and the hidden caves were spectacular. Highly recommend the tour
+                      of the volcanic region!"
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/98.jpg"
+                        alt="Client 5"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Maxwell White</h5>
+                    <p class="client-title">Founder, WhiteCo</p>
+                    <p class="description">
+                      "Every moment spent on Taniti was worth it. From the warm people to the
+                      breathtaking landscapes, it's paradise!"
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="testimonial-card">
+                    <div class="image-wrapper">
+                      <img
+                        src="https://mighty.tools/mockmind-api/content/human/116.jpg"
+                        alt="Client 6"
+                      />
+                      <span class="check-icon"><i class="fas fa-check"></i></span>
+                    </div>
+                    <h5 class="client-name">Sophia Martinez</h5>
+                    <p class="client-title">Founder, Sofix</p>
+                    <p class="description">
+                      "The cultural experience in Taniti was unlike any other. I felt connected to
+                      nature in a profound way."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--|> Reach Us  -->
+    <section class="reach-us py-5">
+      <div class="container">
+        <!-- Logo -->
+        <div class="mb-4 text-center">
+          <img src="images/logo.svg" alt=" Taniti Island  Logo" class="reach-us-logo img-fluid" />
+        </div>
+
+        <!-- Text -->
+        <p class="description mb-4 mx-auto" style="max-width: 700px">
+          Thank you for allowing me the opportunity to experiment with this project during the User
+          Experience Design - D479 course. It has been a fun and insightful experience, and I've
+          enjoyed every moment of it. The process has allowed me to apply what I've learned in a
+          real-world context, and I'm grateful for the chance to improve my skills while exploring
+          new design ideas.
+        </p>
+
+        <!-- Form -->
+        <form class="row justify-content-center g-0">
+          <div class="col-md-6">
+            <input
+              type="email"
+              class="form-control form-control-lg rounded-start mb-2"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-custom p-2 mx-2">Contact ME</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--|> Footer  -->
+    <footer class="footer py-3">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <!-- Left: Copyright Text -->
+        <div class="footer-text text-white fw-bold text-uppercase small">
+          Copyright by Ali Aljanabi
+        </div>
+        <div class="footer-text text-white fw-bold text-uppercase small">
+          All images are taken from <a class="text-white" href="https://www.pexels.com">Pexels</a> ,
+          <a class="text-white" href="https://www.pexels.com">Unsplash</a>
+        </div>
+
+        <!-- Right: Social Icons -->
+        <div class="footer-social d-flex gap-2">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-x"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="Services.js"></script>
+  </body>
+</html>

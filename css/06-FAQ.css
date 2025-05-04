@@ -1,0 +1,53 @@
+/* |> FAQ Section */
+.faq-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('https://img.freepik.com/free-vector/question-marks-background_78370-2896.jpg?t=st=1746058343~exp=1746061943~hmac=7c7e8fa4e9b44d70d2a57d7639d5d7000852fb4b16626d4d03e0e6f34feeb746&w=996')
+      center center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 60px 20px;
+}
+
+.faq-box {
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 2;
+}
+.accordion-header {
+  font-family: 'Poppins', sans-serif;
+}
+.accordion-button {
+  background-color: #0d677b;
+  color: #f9f9f9;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0d677b;
+  background-color: #f1f4f8;
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0d677b;
+}
+
+.modal-body {
+  font-family: 'Poppins', sans-serif;
+
+  padding: 20px;
+}
+
+.faq-section .col-xl-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-section img {
+  max-width: 100%;
+  height: auto;
+}

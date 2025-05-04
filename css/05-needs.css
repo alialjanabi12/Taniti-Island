@@ -1,0 +1,101 @@
+.needs-section {
+  padding: 60px 20px;
+}
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.filter-buttons button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.filter-buttons .active,
+.filter-buttons button:hover {
+  color: #0d677b;
+  border-bottom: 2px solid #0d677b;
+}
+
+/*|> Grid System */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: 300px 300px;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.div3 {
+  grid-row: span 2;
+}
+
+.div4 {
+  grid-column: span 2;
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+  }
+
+  .div3 {
+    grid-column: span 1;
+  }
+
+  .div4 {
+    grid-column: span 1;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+}

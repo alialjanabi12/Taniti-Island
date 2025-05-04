@@ -1,0 +1,42 @@
+/* |>hero and booking */
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.custom-btn {
+  padding: 12px 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #0d677b;
+  border-color: #0d677b;
+}
+
+.btn-outline-primary {
+  color: #0d677b;
+  border-color: #0d677b;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d677b;
+  color: white;
+}
+
+.booking-form {
+  margin-top: -50px;
+}
+
+.booking-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
